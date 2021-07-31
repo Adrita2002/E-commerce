@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+:root {
+    --main-bg-color:  #2874f0;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(241, 241, 114);
+    overflow-x:scroll;
+    overflow-y: scroll;
+}
+header{
+    height:60px;
+    width:100vw;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+}
+nav{
+    height: 60px;
+    width:100vw;
+    background-color: var(--main-bg-color);
+    position:sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    width: 60px;
+    padding: 0 12px;
+}
+nav ul{
+    display: flex;
+   flex-direction: row;
+   margin: 12px;
+  align-items: center;
+}
+nav ul li{
+    display:inline-flex;
+    flex-direction: row;
+    align-items:center;
+    list-style: none;
+    
+}
+header nav ul li a{
+    color: #fbfb15;
+    font-family: 'STIX Two Math', serif;
+    padding:0 12px;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color: greenyellow;
+    font-weight: bolder;
+    font-style:italic;
+}
+.search{
+    display:flex;
+    align-items: center;
+    margin:0 100px;
+}
+.search input{
+    width: 30vw;
+    height:23px;
+    padding:0 12px;
+}
+.search button img{
+    height:20px;
+    width:23px;
+}
+.btn{
+    display: flex;
+    background-color: var(--main-bg-color);
+    border:2px solid yellow;
+    padding:2px 10px;
+
+}
+.btn a{
+    color:yellow;
+    font-family: 'STIX Two Math', serif;
+    text-decoration: none;
+}
+.btn:hover{
+    color: greenyellow;
+    font-weight: bolder;
+}
+.cart{
+    display: flex;
+    margin:0 15px;
+}
+.cart img{
+    height: 35px;
+    width:35px;
+   
+}
+.container{
+    min-height: calc(100vh - 60px - 8vh);
+    margin: auto;
+}
+.slider {
+
+    overflow: hidden;
+
+}
+
+.slider img {
+    width: 20%;
+    height: 300px;
+    float: left;
+}
+
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    
+}
+.card{
+    max-width:90vw;
+    margin:auto;
+    
+    
+}
+.card h2{
+    text-align:center;
+    font-family: 'Ubuntu', serif;
+    padding:10px 0;
+
+}
+.card-item{
+    
+    margin:5px 14px;
+}
+.card-pics{
+    display:inline-block;
+    /* margin:0 10px; */
+}
+
+.lines{
+    text-align:center;
+    font-family: 'STIX Two Math', serif;
+    font-size:12px;
+}
+hr{
+    margin:5px 0;
+}
+.cards{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    /* overflow:hidden; */
+    padding:0 5px;
+}
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #fbfb15;
+    height: 8vh;
+    width:100vw;
+    font-family: 'STIX Two Math', serif;
+    background-color: var(--main-bg-color);
+}
